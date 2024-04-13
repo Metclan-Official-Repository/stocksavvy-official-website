@@ -12,3 +12,17 @@ type DocLink = {
   childrenLinks?: DocChildLink[] | undefined;
   content?: string;
 };
+type Testimonial = {
+  id: string;
+  customerName: string;
+  occupation: string;
+  customerPhoto: string;
+  testimonial: string;
+  star: number;
+};
+
+type Faq = {
+  id: string;
+  question: string;
+  answer: string;
+};

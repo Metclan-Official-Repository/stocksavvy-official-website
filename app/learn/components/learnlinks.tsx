@@ -12,6 +12,21 @@ type Prop = {
 export function LearnLinksWithLinks({ prop }: Prop) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState<Boolean>(false);
+  const learnLinksBig = prop.childrenLinks?.map((childrenLink) => (
+    <li
+      key={childrenLink.id}
+      className="hover:text-black text-[14px] lg:text-[16px]"
+    >
+      <Link
+        style={{
+          color: childrenLink.link === pathname ? "#525CEB" : "black",
+        }}
+        href={childrenLink.link}
+      >
+        {childrenLink.title}
+      </Link>
+    </li>
+  ));
   const [isTitleColorChanged, setIsTitleColorChanged] =
     useState<Boolean>(false);
   const doctitleRef = useRef(null);
@@ -71,22 +86,7 @@ export function LearnLinksWithLinks({ prop }: Prop) {
               transition={{ duration: 0.3 }}
               className="overflow-hidden px-4 border-l flex flex-col gap-3 mt-3"
             >
-              {prop.childrenLinks?.map((childrenLink) => (
-                <li
-                  key={childrenLink.id}
-                  className="hover:text-black text-[14px] lg:text-[16px]"
-                >
-                  <Link
-                    style={{
-                      color:
-                        childrenLink.link === pathname ? "#525CEB" : "black",
-                    }}
-                    href={childrenLink.link}
-                  >
-                    {childrenLink.title}
-                  </Link>
-                </li>
-              ))}
+              {learnLinksBig}
             </motion.ul>
           )}
         </AnimatePresence>

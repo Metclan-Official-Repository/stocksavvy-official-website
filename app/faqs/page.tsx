@@ -1,10 +1,14 @@
 //import components
 import { FaqCard } from "./components/faqcard";
+//import data
+import { faqData } from "../contants/faqData";
+
 export const metadata = {
   title: "FAQ",
   description: "Get answers to the frequently asked questions",
 };
 export default function Faqs() {
+  const faq = faqData.map((faq) => <FaqCard faq={faq} key={faq.id} />);
   return (
     <section className="bg-[#F5F7FC] py-20">
       <div className="w-[85%] mx-auto">
@@ -14,10 +18,7 @@ export default function Faqs() {
         </h2>
         {/* Cards */}
         <div className="max-w-[900px] mx-auto mt-10 flex flex-col gap-6">
-          <FaqCard />
-          <FaqCard />
-          <FaqCard />
-          <FaqCard />
+          {faq}
         </div>
       </div>
     </section>

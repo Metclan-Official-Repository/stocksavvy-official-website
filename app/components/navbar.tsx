@@ -20,7 +20,7 @@ export function Navbar() {
   const [openDialog, setOpenDialog] = useState<boolean>(false);
   const { country, setCountry } = useGlobalContext();
   return (
-    <nav className="py-5 border-[#D6D8FF] border-b-[1.2px] z-10 sticky top-0 bg-white">
+    <nav className="py-5 border-[#D6D8FF] border-b-[1.2px] z-10 bg-white">
       <div className="flex justify-between items-center w-[85%] max-w-[1201px] mx-auto gap-4">
         {/* Logo starts here */}
         <Link href={"/"} className="">

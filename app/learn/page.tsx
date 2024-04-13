@@ -27,6 +27,15 @@ export default function Learn() {
 
   ## Other links 
   `;
+  const docLink = docLinks.map((docLink) => (
+    <Link
+      href={docLink.link}
+      className="p-4 border text-[#525CEB] rounded-[5px]"
+      key={docLink.link}
+    >
+      {docLink.title}
+    </Link>
+  ));
   return (
     <section className="">
       <div className="prose text-[14px] lg:text-[16px] text-gray-600 prose-h2:font-bold prose-h1:font-bold prose-h3:font-bold marker:text-[#525CEB]">
@@ -34,15 +43,7 @@ export default function Learn() {
       </div>
       <div>
         <div className="grid grid-grid-cols-1 md:grid-cols-3 gap-6 mt-5">
-          {docLinks.map((docLink) => (
-            <Link
-              href={docLink.link}
-              className="p-4 border text-[#525CEB] rounded-[5px]"
-              key={docLink.link}
-            >
-              {docLink.title}
-            </Link>
-          ))}
+          {docLink}
         </div>
       </div>
     </section>

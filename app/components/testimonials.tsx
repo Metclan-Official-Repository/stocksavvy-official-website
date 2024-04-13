@@ -10,11 +10,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { FaQuoteLeft } from "react-icons/fa";
 
+//import data
+import { testimonialsData } from "../contants/testimonialsData";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
+type TestimonialCardProp = {
+  testimonial: Testimonial;
+};
 export function Testimonials() {
+  const testimonialRenderLg = testimonialsData.map((testimonialItem) => (
+    <TestimonialCard testimonial={testimonialItem} key={testimonialItem.id} />
+  ));
+  const testimonialRenderSm = testimonialsData.map((testimonialItem) => (
+    <SwiperSlide>
+      <TestimonialCard testimonial={testimonialItem} key={testimonialItem.id} />
+    </SwiperSlide>
+  ));
   return (
     <section className="bg-[#F5F7FC]">
       <div className="w-[85%] mx-auto">
@@ -36,9 +50,7 @@ export function Testimonials() {
         </div>
         <div className="pb-20">
           <div className="md:grid-cols-2 mt-5 hidden md:grid lg:grid-cols-3 gap-5">
-            <TestimonialCard />
-            <TestimonialCard />
-            <TestimonialCard />
+            {testimonialRenderLg}
           </div>
           <div className="mt-5 md:hidden">
             <Swiper
@@ -49,15 +61,7 @@ export function Testimonials() {
               modules={[Pagination]}
               className="mySwiper relative"
             >
-              <SwiperSlide>
-                <TestimonialCard />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TestimonialCard />
-              </SwiperSlide>
-              <SwiperSlide>
-                <TestimonialCard />
-              </SwiperSlide>
+              {testimonialRenderSm}
             </Swiper>
           </div>
         </div>
@@ -66,7 +70,7 @@ export function Testimonials() {
   );
 }
 
-function TestimonialCard() {
+function TestimonialCard({ testimonial }: TestimonialCardProp) {
   return (
     <div className="bg-white p-5 lg:p-8 flex flex-col gap-5 rounded-[20px] shadow">
       <div className="absolute right-[5%] top-[-5%]">
@@ -75,26 +79,24 @@ function TestimonialCard() {
       {/* Row 1 */}
       <div className="flex gap-5">
         <Image
-          src="/images/feedback-1.png"
+          src={testimonial.customerPhoto}
           width={50}
           height={50}
           alt="Images"
+          className="rounded-full"
         />
         <div>
-          <div className="font-bold text-xl text-gray-700">Abbie Connick</div>
+          <div className="font-bold text-xl text-gray-700">
+            {testimonial.customerName}
+          </div>
           <p className="text-gray-700 text-[14px] lg:text-[16px]">
-            Store Owner
+            {testimonial.occupation}
           </p>
         </div>
       </div>
       {/* Row 2 */}
       <div>
-        <span className="text-black text-sm">
-          I can&apos;t express enough how Stocksavvy has transformed our
-          business operations. Before adopting this incredible tool, managing
-          our inventory was a constant challenge. The introduction of XYZ has
-          been a game-changer for us.
-        </span>
+        <span className="text-black text-sm">{testimonial.testimonial}</span>
       </div>
       {/* Rating */}
       <div>

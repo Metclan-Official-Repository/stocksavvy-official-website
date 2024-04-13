@@ -11,7 +11,7 @@ export function Footer() {
         width={200}
         height={200}
         alt="Illustration"
-        className="absolute bottom-[-5%] w-[32] right-4 rotate-12"
+        className="absolute bottom-[-5%] w-[32] right-4 rotate-12 pointer-events-none"
       />
       <div className="w-[85%] mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
@@ -61,17 +61,29 @@ export function Footer() {
           <small>© 2024 Metclan. All Right Reserved</small>
           <ul className="flex items-center gap-3">
             <li className="bg-white p-2 text-[#00065F] rounded-full">
-              <Link target="_blank" href="" className="">
+              <Link
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61558156179180"
+                className=""
+              >
                 <GrFacebookOption />
               </Link>
             </li>
             <li className="bg-white p-2 text-[#00065F] rounded-full">
-              <Link target="_blank" href="" className="">
+              <Link
+                target="_blank"
+                href="https://www.instagram.com/stocksavvy.io/"
+                className=""
+              >
                 <BsInstagram />
               </Link>
             </li>
             <li className="bg-white p-2 text-[#00065F] rounded-full">
-              <Link target="_blank" href="" className="">
+              <Link
+                target="_blank"
+                href="https://twitter.com/stocksavvy_io"
+                className=""
+              >
                 <BsTwitterX />
               </Link>
             </li>

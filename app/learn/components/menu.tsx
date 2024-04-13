@@ -10,6 +10,13 @@ import { LearnLinksWithLinksSmall } from "./learnLinksSmall";
 
 export function LearnMenu() {
   const [isOpen, setIsOpen] = useState<Boolean>(false);
+  const menuLinks = docLinks.map((docLink) => (
+    <LearnLinksWithLinksSmall
+      prop={docLink}
+      key={docLink.link}
+      handleMenu={() => handleMenu()}
+    />
+  ));
   function handleMenu() {
     setIsOpen((prev) => !prev);
   }
@@ -28,13 +35,7 @@ export function LearnMenu() {
           {isOpen && (
             <div className="bg-white w-screen absolute left-0 h-[600px] overflow-scroll pb-20">
               <ul className="w-[85%] mx-auto flex flex-col gap-3">
-                {docLinks.map((docLink) => (
-                  <LearnLinksWithLinksSmall
-                    prop={docLink}
-                    key={docLink.link}
-                    handleMenu={() => handleMenu()}
-                  />
-                ))}
+                {menuLinks}
               </ul>
             </div>
           )}
