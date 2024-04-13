@@ -25,7 +25,7 @@ export function Testimonials() {
     <TestimonialCard testimonial={testimonialItem} key={testimonialItem.id} />
   ));
   const testimonialRenderSm = testimonialsData.map((testimonialItem) => (
-    <SwiperSlide>
+    <SwiperSlide key={testimonialItem.id}>
       <TestimonialCard testimonial={testimonialItem} key={testimonialItem.id} />
     </SwiperSlide>
   ));
