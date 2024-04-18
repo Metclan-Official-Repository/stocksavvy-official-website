@@ -1201,6 +1201,36 @@ To enable custom fields:
   },
   {
     id: nanoid(),
+    title: "Stock Adjustment",
+    link: "/learn/stock-adjustment",
+    hasChildrenLinks: false,
+    content: `
+\n## What is Stock Adjustment? And how to use it?
+
+\n## Stock Adjustment
+
+\n Stock Adjustment helps you decrease the goods you hold in stock, you can enter manual stock adjustments. It’s generally used to write-off damaged stock, or to adjust quantities after a stock take.
+
+\n To create a stock adjustment
+
+\n1. First, go to “Add Stock Adjustment”
+\n2. Select the Business Location & date
+\n3. Select Adjustment Type (Normal Or Abnormal). Normal Or Abnormal is generally used to classify adjustment.
+\n4. Generally Normal Adjustment meaning: Adjustment for normal reasons like Leakages etc.
+\n5. Abnormal meaning: Adjustment for reasons like Fire, Accident etc.
+\n6. Add the products & quantity you want to decrease the product.
+\n7. **Total amount recovered:** Sometimes you can recover some amount from the damaged stocks, like from insurance claims, selling of scraps etc. If there is no amount recovered then you can simply make it 0. The recovered amount is taken into consideration when making a profit & loss report, it is added to the total profit/loss.
+
+\nThe quantities entered for each product will be deducted from the available quantities.
+
+\nYou can view the details of stock adjustment in “Stock Adjustment Report”.
+
+\nAlso, Stock Adjustment is used in Profit & Loss Report (P & L Report). “Total Stock Adjustment” amount is deducted from (P & L Report) and “Total Stock Recovered” amount is added to Profit & Loss Report.
+
+    `,
+  },
+  {
+    id: nanoid(),
     title: "Stock transfer",
     link: "/learn/stock-transfer",
     hasChildrenLinks: false,
