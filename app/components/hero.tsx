@@ -27,7 +27,7 @@ export function Hero() {
           </Link>
           <Link
             className="border px-[24px] py-[12px] rounded-[5px] border-[#525CEB] bg-[#525CEB] text-white hover:bg-transparent hover:text-[#525CEB] whitespace-nowrap"
-            href="/register"
+            href="https://app.stocksavvy.io/login"
           >
             Get started
           </Link>

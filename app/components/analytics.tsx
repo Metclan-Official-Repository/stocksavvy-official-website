@@ -4,12 +4,12 @@ export function Analytics() {
       <div className="w-[85%] max-w-[1201px] mx-auto flex flex-col lg:flex-row justify-between gap-6 lg:gap-6">
         {/* Customers served */}
         <div>
-          <h1 className="text-xl lg:text-4xl font-bold">+200k</h1>
+          <h1 className="text-xl lg:text-4xl font-bold">+5k</h1>
           <p className="text-[14px] lg:text-16px">Happy customers served</p>
         </div>
         {/* Businesses using our products */}
         <div>
-          <h1 className="text-xl lg:text-4xl font-bold">+50k</h1>
+          <h1 className="text-xl lg:text-4xl font-bold">+2k</h1>
           <p className="text-[14px] lg:text-16px">
             Businesses using stocksavvy
           </p>

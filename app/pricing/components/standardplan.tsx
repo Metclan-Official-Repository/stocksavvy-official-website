@@ -110,7 +110,7 @@ export function StandardPlan({
             <span className="text-sm">Lifetime support</span>
           </div>
           <div className="flex items-center gap-2">
-            <IoMdClose className="text-[#525CEB]" />
+            <FaCheck className="text-[#525CEB]" />
             <span className="text-sm">Email invoicing</span>
           </div>
         </div>
