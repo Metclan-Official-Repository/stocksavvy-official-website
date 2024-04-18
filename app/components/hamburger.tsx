@@ -43,10 +43,10 @@ export function HamburgerMenu() {
               </ul>
               <ul className="flex flex-col gap-4">
                 <li className="border px-4 py-2 text-center text-white rounded-[5px]">
-                  <Link href="login">Login</Link>
+                  <Link href="https://www.stocksavvy.io">Login</Link>
                 </li>
                 <li className="border px-4 py-2 text-center text-[#525CEB] rounded-[5px] bg-white">
-                  <Link href="/register">Get started</Link>
+                  <Link href="https://www.stocksavvy.io">Get started</Link>
                 </li>
               </ul>
             </div>
