@@ -56,7 +56,7 @@ export function Navbar() {
         <ul className="flex gap-6 items-center hidden md:flex">
           <li>
             <Link
-              href="https://app.stocksavvy.io/login"
+              href="https://stocksavvy.metclan.io/login"
               className="bg-[#525CEB] px-4 py-2 text-white rounded-[5px] whitespace-nowrap flex gap-1 items-center"
             >
               <span>Sign in </span>
