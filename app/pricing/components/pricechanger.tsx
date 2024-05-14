@@ -20,6 +20,7 @@ import {
 export default function PriceChanger() {
   const [isAnnually, setIsAnnually] = useState<boolean>(false);
   const [businessLocations, setBusinessLocations] = useState<string>("1");
+
   return (
     <div>
       <div className="flex flex-col items-center md:flex-row md:justify-center md:gap-12 my-10 gap-6">

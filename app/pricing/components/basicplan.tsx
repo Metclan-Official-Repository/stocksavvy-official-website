@@ -117,7 +117,7 @@ export function BasicPlan({
       </CardContent>
       <CardFooter>
         <Link
-          href=""
+          href={`/register?type=buy&businessLocations=${businessLocations}&plan=basic&annulSubscription=${isAnnually}`}
           className="text-center w-full bg-[#525CEB] rounded-[5px] text-white p-2"
         >
           Purchase

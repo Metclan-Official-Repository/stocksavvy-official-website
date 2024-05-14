@@ -32,10 +32,10 @@ export function StandardPlan({
       price = isAnnually ? "150,000" : "15,000";
     }
     if (businessLocations === "3") {
-      price = isAnnually ? "430,000" : "43,000";
+      price = isAnnually ? "350,000" : "35,000";
     }
     if (businessLocations === "5") {
-      price = isAnnually ? "730,000" : "75,000";
+      price = isAnnually ? "500,000" : "50,000";
     }
   }
   if (country === "uganda") {
@@ -117,7 +117,7 @@ export function StandardPlan({
       </CardContent>
       <CardFooter>
         <Link
-          href=""
+          href={`/register?type=buy&businessLocations=${businessLocations}&plan=standard&annulSubscription=${isAnnually}`}
           className="text-center w-full bg-[#525CEB] rounded-[5px] text-white p-2"
         >
           Purchase

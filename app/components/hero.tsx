@@ -1,35 +1,49 @@
 //import hooks and libs
 import Image from "next/image";
 import Link from "next/link";
+//import icons
+import { FaCircleCheck } from "react-icons/fa6";
 
 export function Hero() {
   return (
     <section className="w-[85%] max-w-[1201px] mx-auto mt-20 flex justify-between gap-10 flex-col md:flex-row">
       {/* Hero first column */}
       <div className="flex-1">
-        <div className="flex flex-col gap-4 lg:gap-6">
-          <h1 className="text-4xl lg:text-7xl font-bold leading-relaxed">
-            A <span className="text-[#525CEB]">Stress-Free</span> Way To Keep{" "}
-            <span className="text-[#525CEB]">Tabs</span> On Your Inventory
+        <div className="flex flex-col">
+          <p className="text-sm font-semibold text-center md:text-left">
+            ACCOUNTING SOFTWARE FOR SMALL BUSINESSES
+          </p>
+          <h1 className="text-5xl lg:text-5xl font-bold font-opensans text-center mt-5 leading-tight md:text-left">
+            Accounting made easy for small
+            <span className="text-[#525CEB]"> businesses</span>
           </h1>
-          <p className="text-gray-700 text-[14px] lg:text-[16px]">
-            Know What&apos;s In, Know What&apos;s Out, No More Guesswork with
-            your stocks. Stocksavvy is here to revolutionize the way you handle
-            inventory.
+          <p className="text-gray-700 text-[14px] lg:text-[16px] text-center mt-5 md:text-left">
+            Track sales, track expenses, run advanced reports, and more all from
+            one place.
           </p>
         </div>
-        <div className="flex gap-6 mt-6 text-[14px] lg:text-[16px]">
+        <div className="flex gap-4 mt-5 justify-center flex-wrap md:justify-start">
+          <div className="flex items-center gap-2">
+            <FaCircleCheck className="text-2xl text-[#525CEB]" />
+            <span>Safe & Secure</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaCircleCheck className="text-2xl text-[#525CEB]" />
+            <span>Accurate</span>
+          </div>
+        </div>
+        <div className="flex gap-6 mt-10 text-[14px] lg:text-[16px] flex-col text-center md:flex-row">
           <Link
-            className="border px-[24px] py-[12px] rounded-[5px] border-[#525CEB] bg-transparent text-[#525CEB] hover:bg-[#525CEB] hover:text-white whitespace-nowrap"
+            className="border px-[24px] py-3 rounded-[5px] border-[#525CEB] bg-[#525CEB] text-white hover:bg-transparent hover:text-[#525CEB] whitespace-nowrap"
+            href="/pricing"
+          >
+            Buy now
+          </Link>
+          <Link
+            className="border px-[24px] py-3  rounded-[5px] border-[#525CEB] bg-transparent text-[#525CEB] hover:bg-[#525CEB] hover:text-white whitespace-nowrap"
             href="/learn"
           >
             Learn more
-          </Link>
-          <Link
-            className="border px-[24px] py-[12px] rounded-[5px] border-[#525CEB] bg-[#525CEB] text-white hover:bg-transparent hover:text-[#525CEB] whitespace-nowrap"
-            href="https://app.stocksavvy.io/login"
-          >
-            Get started
           </Link>
         </div>
       </div>

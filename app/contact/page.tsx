@@ -2,6 +2,8 @@ import Link from "next/link";
 //import icons
 import { FaPhone, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+//import components
+import { Footer } from "../components/footer";
 
 export default function Contact() {
   return (
@@ -62,6 +64,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

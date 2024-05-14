@@ -92,34 +92,32 @@ export function TrackProducts() {
         />
         <div className="bg-white p-5 lg:p-8 rounded-[20px] shadow flex flex-col gap-6">
           <div>
-            <h4 className="text-xl lg:text-2xl">
-              Track products expiry <span>dates</span>
-            </h4>
+            <h4 className="text-xl lg:text-2xl">Track Products</h4>
             <p className="text-sm mt-2 text-gray-700">
               Stocksavvy tracks products expiry dates for effective inventory
-              management using;
+              management
             </p>
           </div>
           <div className="text-[14px] lg:text-[16px] flex flex-col gap-2 text-black">
             <div className="flex items-center gap-2">
               <HiMiniArrowRightCircle className="text-[#525CEB] text-xl" />
-              <span>Organized Systematic Database</span>
+              <span>Track product purchases</span>
             </div>
             <div className="flex items-center gap-2">
               <HiMiniArrowRightCircle className="text-[#525CEB] text-xl" />
-              <span>Organized Systematic Database</span>
+              <span>Track product expiry dates</span>
             </div>
             <div className="flex items-center gap-2">
               <HiMiniArrowRightCircle className="text-[#525CEB] text-xl" />
-              <span>Organized Systematic Database</span>
+              <span>Track products using barcodes</span>
             </div>
             <div className="flex items-center gap-2">
               <HiMiniArrowRightCircle className="text-[#525CEB] text-xl" />
-              <span>Organized Systematic Database</span>
+              <span>Make adjustments to products prices on the go</span>
             </div>
             <div className="flex items-center gap-2">
               <HiMiniArrowRightCircle className="text-[#525CEB] text-xl" />
-              <span>Organized Systematic Database</span>
+              <span>Manage variants of products</span>
             </div>
           </div>
           <div>
@@ -140,7 +138,7 @@ export function StayInLoop() {
     <div className="mt-10">
       <div className="flex flex-col gap-6 md:flex-row md:flex-row md:justify-center">
         <Image
-          src={"/images/stocksavvy-swipe-1.png"}
+          src={"/images/reports.jpeg"}
           width={500}
           height={500}
           alt="Image"
@@ -148,34 +146,31 @@ export function StayInLoop() {
         />
         <div className="bg-white p-5 lg:p-8 rounded-[20px] shadow flex flex-col gap-6">
           <div>
-            <h4 className="text-xl lg:text-2xl">
-              Track products expiry <span>dates</span>
-            </h4>
+            <h4 className="text-xl lg:text-2xl">Stay in the loop</h4>
             <p className="text-sm mt-2 text-gray-700">
-              Stocksavvy tracks products expiry dates for effective inventory
-              management using;
+              Cut through the noise as stay in the loop with accurate reports
             </p>
           </div>
           <div className="text-[14px] lg:text-[16px] flex flex-col gap-2 text-black">
             <div className="flex items-center gap-2">
               <HiMiniArrowRightCircle className="text-[#525CEB] text-xl" />
-              <span>Organized Systematic Database</span>
+              <span>Run advanced profit/loss reports</span>
             </div>
             <div className="flex items-center gap-2">
               <HiMiniArrowRightCircle className="text-[#525CEB] text-xl" />
-              <span>Organized Systematic Database</span>
+              <span>Up to date inventory valuation reports</span>
             </div>
             <div className="flex items-center gap-2">
               <HiMiniArrowRightCircle className="text-[#525CEB] text-xl" />
-              <span>Organized Systematic Database</span>
+              <span>Manage cash registers</span>
             </div>
             <div className="flex items-center gap-2">
               <HiMiniArrowRightCircle className="text-[#525CEB] text-xl" />
-              <span>Organized Systematic Database</span>
+              <span>Keep track of payments and payment accounts</span>
             </div>
             <div className="flex items-center gap-2">
               <HiMiniArrowRightCircle className="text-[#525CEB] text-xl" />
-              <span>Organized Systematic Database</span>
+              <span></span>
             </div>
           </div>
           <div>

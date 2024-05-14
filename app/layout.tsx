@@ -7,7 +7,6 @@ import { GlobalContextProvider } from "./context/store";
 
 //import components
 import { Navbar } from "./components/navbar";
-import { Footer } from "./components/footer";
 //import styles
 import "./globals.css";
 
@@ -31,7 +30,6 @@ export default function RootLayout({
           <GlobalContextProvider>
             <Navbar />
             {children}
-            <Footer />
           </GlobalContextProvider>
         </div>
       </body>
