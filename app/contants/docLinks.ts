@@ -895,7 +895,7 @@ This discrepancy may occur due to unknown reasons or manual updates to the stock
 **Note:** You must have admin privileges for this procedure.
 
 1. **Navigate to the following URL:** 
-   - [stocksavvy.metclan.com/reports/product-stock-details](stocksavvy.metclan.com/reports/product-stock-details)
+   - [stocksavvy.metclan.com/reports/product-stock-details](https://stocksavvy.metclan.com/reports/product-stock-details)
 
 2. **Important:** Select the business location and press the search button. This will display a list of products with mismatched stock.
 

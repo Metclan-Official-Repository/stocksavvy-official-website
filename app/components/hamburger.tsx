@@ -46,7 +46,7 @@ export function HamburgerMenu() {
                   <Link href="https://stocksavvy.metclan.com/login">Login</Link>
                 </li>
                 <li className="border px-4 py-2 text-center text-[#525CEB] rounded-[5px] bg-white">
-                  <Link href="www.stocksavvy.io">Get started</Link>
+                  <Link href="">Get started</Link>
                 </li>
               </ul>
             </div>
