@@ -106,7 +106,7 @@ export function ProPlan({
       </div>
       <CardFooter className="">
         <Link
-          href={`/register?type=buy&businessLocations=${businessLocations}&plan=pro&annulSubscription=${isAnnually}`}
+          href={`https://stocksavvy.metclan.com/business/register`}
           className="text-center w-full bg-[#525CEB] rounded-[5px] text-white p-2"
         >
           Purchase

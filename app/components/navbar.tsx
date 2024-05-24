@@ -119,7 +119,7 @@ export function Navbar() {
                   />
                   <span className="text-gray-700">Nigeria</span>
                 </div>
-                <div
+                {/* <div
                   className={`flex gap-3 hover:bg-[#525CEB1A] p-4 rounded-[5px] transition cursor-pointer ${
                     country === "uganda" && "bg-[#525CEB1A]"
                   }`}
@@ -136,7 +136,7 @@ export function Navbar() {
                     className="rounded-full w-6 h-6 flex items-center justify-center"
                   />
                   <span className="text-gray-700">Uganda</span>
-                </div>
+                </div> */}
                 <div
                   className={`flex gap-3 hover:bg-[#525CEB1A] p-4 rounded-[5px] transition cursor-pointer ${
                     country === "global" && "bg-[#525CEB1A]"
