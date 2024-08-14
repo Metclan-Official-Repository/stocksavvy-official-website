@@ -35,9 +35,9 @@ export function Hero() {
         <div className="flex gap-6 mt-10 text-[14px] lg:text-[16px] flex-col text-center md:flex-row">
           <Link
             className="border px-[24px] py-3 rounded-[5px] border-[#525CEB] bg-[#525CEB] text-white hover:bg-transparent hover:text-[#525CEB] whitespace-nowrap"
-            href="/pricing"
+            href="https://stocksavvy.metclan.com/business/register"
           >
-            Buy now
+            Start free trial
           </Link>
           <Link
             className="border px-[24px] py-3  rounded-[5px] border-[#525CEB] bg-transparent text-[#525CEB] hover:bg-[#525CEB] hover:text-white whitespace-nowrap"
