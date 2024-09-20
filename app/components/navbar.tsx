@@ -55,13 +55,13 @@ export function Navbar() {
         {/* Login & Signup links start end */}
         <ul className="flex gap-6 items-center hidden md:flex">
           <li>
-            <Link
+            <a
               href="https://stocksavvy.metclan.com/login"
               className="bg-[#525CEB] px-4 py-2 text-white rounded-[5px] whitespace-nowrap flex gap-1 items-center"
             >
               <span>Sign in </span>
               <IoMdArrowForward />
-            </Link>
+            </a>
           </li>
           <Dialog open={openDialog} onOpenChange={setOpenDialog}>
             <DialogTrigger>
